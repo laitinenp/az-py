@@ -1,0 +1,7 @@
+{
+    "organization": "https://dev.azure.com/smartict-ohtu/",
+    "prefTeamSize": 4,
+    "teams": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"],
+    "studentsExcel": "Opiskelijat.xls",
+    "subscription": "SmartICT"
+}

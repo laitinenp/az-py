@@ -1,0 +1,226 @@
+{
+    "organization": "https://dev.azure.com/smartict-ohtu/",
+    "teams": [
+        {
+            "teamName": "Alpha",
+            "teamMembers": [
+                {
+                    "Last name": "Koponen",
+                    "First name": "Riikka",
+                    "Name": "Riikka Koponen",
+                    "Email": "riikka.koponen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Tiainen",
+                    "First name": "Tuukka",
+                    "Name": "Tuukka Tiainen",
+                    "Email": "Tuukka.Tiainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Taskinen",
+                    "First name": "Jani",
+                    "Name": "Jani Taskinen",
+                    "Email": "jani.taskinen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Wells",
+                    "First name": "Sanna",
+                    "Name": "Sanna Wells",
+                    "Email": "sanna.wells@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Autti",
+                    "First name": "Hannu",
+                    "Name": "Hannu Autti",
+                    "Email": "hannu.autti@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Beta",
+            "teamMembers": [
+                {
+                    "Last name": "Lindholm",
+                    "First name": "Suvi",
+                    "Name": "Suvi Lindholm",
+                    "Email": "suvi.lindholm@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Suomalainen",
+                    "First name": "Petri",
+                    "Name": "Petri Suomalainen",
+                    "Email": "Petri.K.Suomalainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Mattila",
+                    "First name": "Jussi",
+                    "Name": "Jussi Mattila",
+                    "Email": "jussi.mattila@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Melnikova",
+                    "First name": "Tatiana",
+                    "Name": "Tatiana Melnikova",
+                    "Email": "tatiana.melnikova@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Nissen",
+                    "First name": "Eva",
+                    "Name": "Eva Nissen",
+                    "Email": "eva.nissen@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Gamma",
+            "teamMembers": [
+                {
+                    "Last name": "Ikonen",
+                    "First name": "Toni",
+                    "Name": "Toni Ikonen",
+                    "Email": "toni.ikonen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Hakkarainen",
+                    "First name": "Katja",
+                    "Name": "Katja Hakkarainen",
+                    "Email": "Katja.M.Hakkarainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Sutela",
+                    "First name": "Abraham",
+                    "Name": "Abraham Sutela",
+                    "Email": "abraham.sutela@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Suvanto",
+                    "First name": "Jonna",
+                    "Name": "Jonna Suvanto",
+                    "Email": "jonna.suvanto@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Huovinen",
+                    "First name": "Kaisa",
+                    "Name": "Kaisa Huovinen",
+                    "Email": "kaisa.huovinen@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Delta",
+            "teamMembers": [
+                {
+                    "Last name": "Hakkarainen",
+                    "First name": "Tero",
+                    "Name": "Tero Hakkarainen",
+                    "Email": "tero.1.hakkarainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Lehmus",
+                    "First name": "Minttu",
+                    "Name": "Minttu Lehmus",
+                    "Email": "Minttu.Lehmus@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Virtala",
+                    "First name": "Mika",
+                    "Name": "Mika Virtala",
+                    "Email": "Mika.1.Virtala@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Peltonen",
+                    "First name": "Joonas",
+                    "Name": "Joonas Peltonen",
+                    "Email": "joonas.1.peltonen@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Epsilon",
+            "teamMembers": [
+                {
+                    "Last name": "H\u00e4m\u00e4l\u00e4inen",
+                    "First name": "Minna-Mari",
+                    "Name": "Minna-Mari H\u00e4m\u00e4l\u00e4inen",
+                    "Email": "minna-mari.hamalainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Pyydysm\u00e4ki",
+                    "First name": "Lassi",
+                    "Name": "Lassi Pyydysm\u00e4ki",
+                    "Email": "lassi.pyydysmaki@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Korhonen",
+                    "First name": "Henri",
+                    "Name": "Henri Korhonen",
+                    "Email": "henri.1.korhonen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Koski",
+                    "First name": "Vili",
+                    "Name": "Vili Koski",
+                    "Email": "vili.koski@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Zeta",
+            "teamMembers": [
+                {
+                    "Last name": "Nuutinen",
+                    "First name": "Joni",
+                    "Name": "Joni Nuutinen",
+                    "Email": "joni.nuutinen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Teinil\u00e4",
+                    "First name": "Matti",
+                    "Name": "Matti Teinil\u00e4",
+                    "Email": "matti.teinila@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Nousiainen",
+                    "First name": "Petri",
+                    "Name": "Petri Nousiainen",
+                    "Email": "petri.nousiainen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Rosenvall",
+                    "First name": "Anitta",
+                    "Name": "Anitta Rosenvall",
+                    "Email": "anitta.rosenvall@edu.karelia.fi"
+                }
+            ]
+        },
+        {
+            "teamName": "Eta",
+            "teamMembers": [
+                {
+                    "Last name": "Jaskari",
+                    "First name": "Joonas",
+                    "Name": "Joonas Jaskari",
+                    "Email": "joonas.jaskari@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Kettunen",
+                    "First name": "Kimi",
+                    "Name": "Kimi Kettunen",
+                    "Email": "Kim-Henrik.Kettunen@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Taberman",
+                    "First name": "Helena",
+                    "Name": "Helena Taberman",
+                    "Email": "helena.taberman@edu.karelia.fi"
+                },
+                {
+                    "Last name": "Vartiainen ",
+                    "First name": "Juha",
+                    "Name": "Juha Vartiainen ",
+                    "Email": "juha.1.vartiainen@edu.karelia.fi"
+                }
+            ]
+        }
+    ]
+}
