@@ -65,17 +65,20 @@ def teamify( studs, org, teamNames, prefTeamSize ):
 def main():
     if len(sys.argv) != 2:
         print("usage: py teamify.py <json-settings-file>")
-        return -1
+        sys.exit(1)
     settings = read_conf( sys.argv[1] )
     wb = read_students( settings["studentsExcel"] )
     studs = getjson( wb )
+    if settings["prefTeamSize"] > len(studs):
+        print("Preferred team size exceeds the number of students. Can not generate teams. Exiting.")
+        sys.exit(1)
     teams = teamify( studs, settings["organization"], settings["teams"], settings["prefTeamSize"])
     json_teams = json.dumps( teams, indent = 4 )
     print(json_teams)
-    return 0
 
 if __name__ == "__main__":
     main()
+    sys.exit(0)
 
 # e = emails( wb )
 # for x in e:
