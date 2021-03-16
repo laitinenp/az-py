@@ -23,11 +23,11 @@ def getstu( wb, i ):
         "First name": wb.cell_value(i + 1, 1),
         "Name": wb.cell_value(i + 1, 2),
         "Email":  wb.cell_value(i + 1, 3),
-        "Email oma": wb.cell_value(i + 1, 4),
-        "Student id": wb.cell_value(i + 1, 5),
+        #"Email oma": wb.cell_value(i + 1, 4),
+        #"Student id": wb.cell_value(i + 1, 5),
         "Username": wb.cell_value(i + 1, 6),
-        "State": wb.cell_value(i + 1, 7),
-        "State code": wb.cell_value(i + 1, 8)
+        "State": wb.cell_value(i + 1, 7)
+        #, "State code": wb.cell_value(i + 1, 8)
     }
  
 def getjson( wb ):
@@ -79,7 +79,3 @@ def main():
 if __name__ == "__main__":
     main()
     sys.exit(0)
-
-# e = emails( wb )
-# for x in e:
-#    print( x )
