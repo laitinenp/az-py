@@ -5,19 +5,20 @@ import sys
 def placeAzCommands( teamDefs ):
     for t in teamDefs["teams"]:
         print(
-            "az devops project create --name '" +
+            "az devops project create --name \"" +
             t["teamName"] +
-            "' --description 'Project for team " +
+            "\" --description \"Project for team " +
             t["teamName"] +
-            "' --process Scrum --organization " +
+            "\" --process Scrum --organization " +
             teamDefs["organization"]
         )
         for s in t["teamMembers"]:
             print(
                 "az devops user add --email-id " +
                 s["Email"] +
-                "--license-type express --send-email-invite true --organization " +
-                teamDefs["organization"]
+                " --license-type express --send-email-invite true --organization " +
+                teamDefs["organization"] +
+                " --output table"
             )
     pass
 
@@ -36,7 +37,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# e = emails( wb )
-# for x in e:
-#    print( x )

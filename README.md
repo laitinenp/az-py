@@ -23,3 +23,9 @@ Program 3: gen-teams-az.bat
 Description: generate az commands and teams.json according to org-conf.json and students list in the Peppi-generated Students.xls list.
 
 > gen-teams-az.bat
+
+Program 4: az-del-teams.py
+Description: generate az commands for removing existing azure teams and organization members using teams json file.
+Prerequisite: Azure resources created using the script created by the gen-teams-az.bat
+
+> py gen-del-teams.py teams.json > del-teams-az.bat
