@@ -9,7 +9,9 @@ def placeAzCommands( teamDefs ):
             t["teamName"] +
             "\" --description \"Project for team " +
             t["teamName"] +
-            "\" --process Scrum --organization " +
+            "\" --process " +
+            teamDefs["process"] +
+            " --organization " +
             teamDefs["organization"]
         )
         for s in t["teamMembers"]:
@@ -31,8 +33,15 @@ def main():
     if len(sys.argv) != 2:
         print("usage: py az-teams.py <teams-file.json>")
         return -1
-    teams = read_teams( sys.argv[1] )
-    placeAzCommands(teams)
+    try:
+        teams = read_teams( sys.argv[1] )
+        placeAzCommands(teams)
+    except FileNotFoundError:
+        print("Could not find file " + sys.argv[1] + ". Exiting.")
+        return -1
+    except:
+        print("Could not generate commands. The input file may be corrupted. Exiting.")
+        return -1
     return 0
 
 if __name__ == "__main__":

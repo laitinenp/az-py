@@ -3,5 +3,6 @@
     "prefTeamSize": 4,
     "teams": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"],
     "studentsExcel": "Students.xls",
-    "subscription": "SmartICT"
+    "subscription": "SmartICT",
+    "process": "Scrum"
 }

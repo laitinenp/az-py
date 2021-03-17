@@ -10,6 +10,7 @@ def read_students( loc ):
     wb = xlrd.open_workbook(loc)
     return wb.sheet_by_index(0)
 
+# get email list form students excel sheet wb
 def emails( wb ):
     res = []
     for i in range(1, wb.nrows):
@@ -29,33 +30,46 @@ def getstu( wb, i ):
         "State": wb.cell_value(i + 1, 7)
         #, "State code": wb.cell_value(i + 1, 8)
     }
- 
+
+# Convert excel sheet data structure wb to json format 
 def getjson( wb ):
     res = []
     for i in range(1, wb.nrows-1):
         res.append(getstu(wb, i))
     return res
 
+# Read input configuration file
 def read_conf( jsonfile ):
     with open( jsonfile ) as conf:
         data = conf.read()
     return json.loads( data )
 
-def teamify( studs, org, teamNames, prefTeamSize ):
-    numTeamsNeeded = math.floor(len(studs) / prefTeamSize)
+# Create random teams json document according to settings json data and students list
+def teamify( settings, students ):
+    org = settings['organization']
+    teamNames = settings['teams']
+    prefTeamSize = settings['prefTeamSize']
+    process = settings['process']
+    numTeamsNeeded = math.floor( len(students) / prefTeamSize )
+    # This is the result we shall return in the end after having filled the teams list
     result = {
         "organization": org,
+        "process": process,
         "teams": []
     }
+    # Fill the team structures
     for n in teamNames[ : numTeamsNeeded ]:
         result["teams"].append({
             "teamName": n,
             "teamMembers": []
         })
-    random.shuffle( studs )
-    i = 0   # muuttujalla kierretään tiimin numeroa
-    for s in studs:
+    # We create random teams
+    random.shuffle( students )
+    # And finally add students list in to the team structures
+    i = 0   # refers to team number which goes around 0 .. (numTeamsNeeded-1)
+    for s in students:
         result["teams"][i]["teamMembers"].append(s)
+        # fill only teams we need this time
         if i < (numTeamsNeeded - 1):
             i += 1
         else:
@@ -72,7 +86,7 @@ def main():
     if settings["prefTeamSize"] > len(studs):
         print("Preferred team size exceeds the number of students. Can not generate teams. Exiting.")
         sys.exit(1)
-    teams = teamify( studs, settings["organization"], settings["teams"], settings["prefTeamSize"])
+    teams = teamify( settings, studs )
     json_teams = json.dumps( teams, indent = 4 )
     print(json_teams)
 

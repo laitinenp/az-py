@@ -15,7 +15,7 @@ Example run:
 > py teamify.py org-conf.json > teams.json
 
 Program 2: az-teams.py
-Description: generate azure az commands to produce devops teams.
+Description: generate azure az commands to produce devops teams using teams json file.
 
 > py az-teams.py teams.json > azconf.bat
 

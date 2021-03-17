@@ -27,11 +27,27 @@ def read_teams( jsonfile ):
     return json.loads( data )
 
 def main():
+
     if len(sys.argv) != 2:
         print("usage: py az-del-teams.py <teams-file.json>")
         return -1
-    teams = read_teams( sys.argv[1] )
-    placeRemoveAzCommands(teams)
+        
+    try:
+        # read teams data as json
+        teams = read_teams( sys.argv[1] )
+        # generate az command according to the result of the above
+        placeRemoveAzCommands(teams)
+
+    except FileNotFoundError:
+        print("Could not read teams from " + sys.argv[1] + ". Exiting.")
+        return -1
+    except:
+        print("Could not generate commands. The input file may be corrupted. Exiting.")
+        return -1
+    except:
+        print("Could not generate az commands. You may have not logged in (using az login) or the teams or users in the Azure do not exist.")
+        return -1
+
     return 0
 
 if __name__ == "__main__":
