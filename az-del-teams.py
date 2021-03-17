@@ -2,16 +2,20 @@ from az import *
 import json
 import sys
 
+# Generate az command for removing the teams and students from azure devops organizations
 def placeRemoveAzCommands( teamDefs ):
     for t in teamDefs["teams"]:
+        # Need to know what is the project id by asking the Azure
         azCommand = "az devops project show --project \"" + t["teamName"] + "\" --organization " + teamDefs["organization"] + " --query \"id\""
         projid, err = az_cli( azCommand )
+        # Produce az command for removing the project
         print(
             "az devops project delete --id \"" +
             projid +
             "\" --organization " +
             teamDefs["organization"]
         )
+        # Produce az command for removing the team members from the Azure devops organization
         for s in t["teamMembers"]:
             print(
                 "az devops user remove --user " +
@@ -21,11 +25,13 @@ def placeRemoveAzCommands( teamDefs ):
             )
     pass
 
+# Read teams definitions from json file
 def read_teams( jsonfile ):
     with open( jsonfile ) as teams:
         data = teams.read()
     return json.loads( data )
 
+# Main function
 def main():
 
     if len(sys.argv) != 2:
