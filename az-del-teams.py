@@ -21,7 +21,8 @@ def placeRemoveAzCommands( teamDefs ):
                 "az devops user remove --user " +
                 s["Email"] +
                 " --organization " +
-                teamDefs["organization"]
+                teamDefs["organization"] +
+                " --yes"
             )
     pass
 

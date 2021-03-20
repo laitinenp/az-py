@@ -34,7 +34,7 @@ def getstu( wb, i ):
 # Convert excel sheet data structure wb to json format 
 def getjson( wb ):
     res = []
-    for i in range(1, wb.nrows-1):
+    for i in range(0, wb.nrows-1):
         res.append(getstu(wb, i))
     return res
 
