@@ -4,16 +4,17 @@ import sys
 
 def placeAzCommands( teamDefs ):
     for t in teamDefs["teams"]:
-        print(
-            "call az devops project create --name \"" +
-            t["teamName"] +
-            "\" --description \"Project for team " +
-            t["teamName"] +
-            "\" --process " +
-            teamDefs["process"] +
-            " --organization " +
-            teamDefs["organization"]
-        )
+        for s in t["teamMembers"]:
+            print(
+                "call az devops user add --email-id " +
+                # s["Email"] +
+                s["Username"] + "@edu.karelia.fi" +
+                " --license-type express" +
+                " --send-email-invite true" +
+                " --organization " +
+                teamDefs["organization"] +
+                " --output table"
+            )
     pass
 
 def read_teams( jsonfile ):
