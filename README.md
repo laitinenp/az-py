@@ -34,6 +34,6 @@ Description: generate az commands to produce devops users az commands.
 
 Program 4: az-del-teams.py
 Description: generate az commands for removing existing azure teams and organization members using teams json file.
-Prerequisite: Azure resources created using the script created by the gen-teams-az.bat
+Prerequisite: Azure resources created using the script created by the programs 2 and 3.
 
 > py gen-del-teams.py teams.json > del-teams-users-az.bat
