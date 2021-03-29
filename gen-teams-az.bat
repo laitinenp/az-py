@@ -4,6 +4,7 @@ echo on
 
 py teamify.py org-conf.json > teams.json
 py az-teams.py teams.json > az-create-teams.bat
+py az-users.py teams.json > az-create-users.bat
 
 echo off
 echo ... done. If successfull, the teams.json file contains now teams-structure
