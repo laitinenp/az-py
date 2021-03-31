@@ -8,6 +8,7 @@ def placeAzCommands( teamDefs ):
             print(
                 "call az devops user add --email-id " +
                 # s["Email"] +
+                # NOTE: in Karelia the useranme seems to be the account name which is required by the Azure platform
                 s["Username"] + "@edu.karelia.fi" +
                 " --license-type express" +
                 " --send-email-invite true" +
